@@ -1,20 +1,86 @@
-body {
+body{
   padding: 0;
   margin: 0;
+  line-height: 31px;
+  background-color: #f7f8fa;
+  overflow: visible;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.page{
+  position: relative;
+  z-index: 1000;
+  padding-bottom: 590px;
+  background-color: #fff;
+}
+
+
+.landing{
   height: 100vh;
-  width: 100vw;
-  background: #4568DC;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #B06AB3, #4568DC);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: center;
+  -ms-align-items: center;
   align-items: center;
+  background-color: #fff;
 }
-body p {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 50px;
+.landing .page-title{
+  font-weight: 500;
+  font-size: 4rem;
+}
+.line-sep{
+  height: 2px;
+  width: 100px;
+  background-color: rgba(0,0,0,0.42);
+  margin: 12px auto; 
+}
+.section{
+  padding: 60px 0px;
+  position: relative;
+  background-color: #fff;
+}
+.section-title{
+  margin-bottom: 40px;
+}
+.section-title h3{
+  margin: 20px 0px; 
+}
+.content-img{
+  overflow: hidden;
+}
+.content-img img{
+  width: 100%;
+}
+.content-title h4{
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 25px 0px;
+}
+.content-desc p{
+  margin: 15px 0px;
+}
+.content-desc a{
+  display: inline-block;
+  margin: 15px 0px 20px 0px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: -1;
+  color: #F0ECEB;
+  background-color: #333;
+  min-height: 590px;
+  padding: 90px 0 0;
 }
